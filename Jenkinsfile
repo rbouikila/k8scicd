@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+      label 'Node02'
+    }
     environment {
         registry = "magalixcorp/k8scicd"
         GOCACHE = "/tmp"
